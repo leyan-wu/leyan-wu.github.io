@@ -68,6 +68,16 @@ body_class: practice-page
       {% if poem.research_note %}
       <p class="creative-research-note">{{ poem.research_note }}</p>
       {% endif %}
+      {% if poem.explanation_paragraphs %}
+      <details class="creative-explanation">
+        <summary>{{ poem.explanation_label | default: "Read explanation" }}</summary>
+        <div class="creative-explanation-body">
+          {% for paragraph in poem.explanation_paragraphs %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </details>
+      {% endif %}
       <p class="creative-link-wrap">
         <a href="{{ poem.file | relative_url }}" target="_blank" rel="noopener noreferrer">Open work (PDF)</a>
       </p>
@@ -96,6 +106,16 @@ body_class: practice-page
     <div class="zine-meta">{{ zine.year }} • {{ zine.category }}</div>
     {% if zine.research_note %}
     <p class="creative-research-note">{{ zine.research_note }}</p>
+    {% endif %}
+    {% if zine.explanation_paragraphs %}
+    <details class="creative-explanation">
+      <summary>{{ zine.explanation_label | default: "Read explanation" }}</summary>
+      <div class="creative-explanation-body">
+        {% for paragraph in zine.explanation_paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </details>
     {% endif %}
     <p class="creative-link-wrap">
       <a href="{{ zine.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Open work (PDF)</a>

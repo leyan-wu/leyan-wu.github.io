@@ -42,6 +42,14 @@ zines:
     category: "poetry"
     year: "2024"
     research_note: "Explores how fragments of everyday images accumulate into personal narrative—informing my interest in collage as reflective practice."
+    explanation_label: "Read project explanation"
+    explanation_paragraphs:
+      - >
+        Fragment of Life begins with the idea that life is fragmental: only some moments give us a strong feeling of being alive, while millions of fleeting moments dissolve into nothingness. That vanishing is represented by the null set. At the same time, writing—songs and words made while trying to live with sobriety and observation—becomes evidence of an ongoing effort to find meaning.
+      - >
+        The two themes meet in the middle of the book. One side moves toward the emptiness of life; the other reaches toward an idealized paradise, borrowed from Glass Animals’ album How to Be a Human Being. The book asks how to balance these opposing impulses, and whether anyone can live without some image of paradise.
+      - >
+        In its physical form, the two themes begin at opposite ends and intersect in the middle. Each slide shows the front and back of a page, divided by the dotted line. The book is designed as a simple quarter-A4 object, assembled with staples and fragments of broken CDs attached to the cover. This prototype is still a work in progress: its structure, translation, and visual logic need further revision so the material form can communicate the idea more clearly.
 
 poems:
   - title: "Poems in Conversation with Photography"
@@ -51,3 +59,11 @@ poems:
     category: "poetry + photography"
     year: "2026"
     research_note: "Pairs text and image to study how meaning emerges in dialogue across modalities—a thread that runs through my multimodal systems work."
+    explanation_label: "Read artist's statement"
+    explanation_paragraphs:
+      - >
+        Leaving grew out of a sequence of psychological struggles around the experience of growing, and tries to capture the pain and disorientation of that process. It combines five poems with photography and digital collage. Rather than writing toward wholeness or completion, the project stays with the fragments: the empty spaces where emotions have no exit, and the small tactile sensations that help me hold on to reality.
+      - >
+        The images borrow from cinematic montage. Distorted, negative-exposure photographs and collaged pictures sit beside the poems to create a cross-modal tension, asking the reader to inhabit something like a fever dream. The work also draws on Allen Ginsberg's idea of “spontaneous bop prosody,” especially in the unpunctuated sections, while enjambment, repetition, and blank space create pauses and multiple paths through the poems.
+      - >
+        The project is complete for the course, but remains open to revision. I want to keep testing line breaks, punctuation, language, and the relationship between each photograph and poem—especially by reading the work aloud and returning to it after some distance. The central question is how much to hold back: how to leave room for readers' interpretations without making the work too vague.

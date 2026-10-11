@@ -801,6 +801,41 @@ button:focus-visible,
   margin: 0.5rem 0 0;
 }
 
+.creative-explanation {
+  margin-top: 1.25rem;
+  border-top: 1px solid rgba(42, 38, 34, 0.22);
+  padding-top: 0.8rem;
+}
+
+.creative-explanation summary {
+  color: var(--text-accent);
+  cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  list-style-position: outside;
+}
+
+.creative-explanation summary::marker {
+  color: var(--accent-coral);
+}
+
+.creative-explanation-body {
+  max-width: 60rem;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.creative-explanation-body p {
+  margin: 0 0 0.9rem;
+}
+
+.creative-explanation-body p:last-child {
+  margin-bottom: 0;
+}
+
 .creative-list {
   display: grid;
   gap: 1rem;
