@@ -1,0 +1,43 @@
+format: text
+
+hero:
+  image: /assets/research/lumen/lumen-organism.svg
+  caption: "Lumen is a browser-based artificial organism whose body responds to proximity, touch, conversation, time, and return visits."
+
+motivation: >
+  As more of everyday life moves onto screens, can a digital encounter still offer a little comfort?
+  Lumen begins with that human question and a second, more speculative one: what changes when AI is
+  given a body—something with distance, a membrane, a rhythm, and visible traces of a relationship?
+  It does not claim machine consciousness; it gives questions about embodiment, care, and artificial
+  life a form that people can encounter.
+
+system:
+  body: >
+    I designed and built Lumen as a fluid, cell-like organism rendered procedurally in the browser.
+    Local MediaPipe hand tracking lets it notice a palm, preserve personal space, react to gentle
+    fingertip contact, and withdraw from sudden motion without uploading raw video or landmarks.
+    A server-side voice pipeline supports natural conversation, while browser-local memory records
+    trust, familiarity, development, recent exchanges, and a daily rhythm of exploration, feeding,
+    play, sleep, and dreams. Repeated visits gradually alter the same biological form rather than
+    swapping between fixed character skins.
+
+study_heading: "Experience Design & Validation"
+study: >
+  The interaction was tuned around legibility and restraint: calm presence begins to register only
+  after several seconds, contact rewards have cooldowns, fear decays gradually, and Lumen resumes its
+  own activity after the visitor leaves. Regression checks cover production rendering, gesture timing,
+  blocked storage, streaming audio decoding, cancellation, and voice consistency. Desktop and 390 px
+  mobile layouts, returning visits, guide navigation, and empty dream-journal states were also reviewed;
+  real camera and microphone behavior remains device-dependent.
+
+insight: >
+  Embodiment changes the grammar of an AI encounter. Distance creates anticipation, touch requires
+  consent-like pacing, and persistent physical development makes time together visible. Lumen suggests
+  that an artificial companion can invite care not by asserting personhood, but by sustaining a coherent
+  body, rhythm, memory, and capacity to be affected.
+
+reflection: >
+  The project made the boundary between evocative behavior and overclaiming especially important.
+  Comfort is a design intention rather than a guaranteed outcome, and responsive behavior is not evidence
+  of subjective experience. Holding that boundary allowed the prototype to stay emotionally expressive
+  while remaining honest about what its simulation can and cannot establish.

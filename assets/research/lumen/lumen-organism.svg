@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Lumen, a luminous artificial organism</title>
+  <desc id="desc">A translucent cell-like form floats in a dark field with a glowing core, orbiting organelles, and a nearby fingertip.</desc>
+  <defs>
+    <radialGradient id="field" cx="52%" cy="44%" r="72%">
+      <stop offset="0" stop-color="#18342f"/>
+      <stop offset="0.55" stop-color="#0d1b1c"/>
+      <stop offset="1" stop-color="#070d10"/>
+    </radialGradient>
+    <radialGradient id="body" cx="43%" cy="38%" r="68%">
+      <stop offset="0" stop-color="#f8efb7" stop-opacity="0.78"/>
+      <stop offset="0.27" stop-color="#b9e7c8" stop-opacity="0.56"/>
+      <stop offset="0.68" stop-color="#6fcfc4" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#60b7ae" stop-opacity="0.05"/>
+    </radialGradient>
+    <radialGradient id="core" cx="42%" cy="39%" r="60%">
+      <stop offset="0" stop-color="#fffbd5"/>
+      <stop offset="0.35" stop-color="#ffd889"/>
+      <stop offset="1" stop-color="#dc8064" stop-opacity="0.15"/>
+    </radialGradient>
+    <linearGradient id="finger" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f1d0b4"/>
+      <stop offset="1" stop-color="#b9796d"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#field)"/>
+  <g fill="#a4d8c6" opacity="0.32">
+    <circle cx="205" cy="234" r="5"/><circle cx="315" cy="790" r="7"/><circle cx="1280" cy="205" r="4"/>
+    <circle cx="1390" cy="710" r="6"/><circle cx="1130" cy="860" r="3"/><circle cx="1020" cy="150" r="3"/>
+  </g>
+  <ellipse cx="765" cy="500" rx="410" ry="360" fill="#5dc9bb" opacity="0.12" filter="url(#soft)"/>
+  <path d="M427 495C412 327 530 195 700 159c184-39 365 31 439 159 75 130 55 316-44 430-98 112-270 154-419 111-148-43-235-180-249-364Z" fill="url(#body)" stroke="#9de4d5" stroke-opacity="0.68" stroke-width="7"/>
+  <path d="M466 490c-8-142 89-253 233-286 156-35 310 22 380 132 66 104 52 258-32 355-83 96-232 135-360 99-126-36-214-159-221-300Z" fill="none" stroke="#d8f5d8" stroke-opacity="0.28" stroke-width="3"/>
+  <circle cx="744" cy="488" r="112" fill="url(#core)" opacity="0.94" filter="url(#glow)"/>
+  <circle cx="711" cy="453" r="29" fill="#fff" opacity="0.68"/>
+  <g fill="none" stroke="#d7f3cf" stroke-opacity="0.48" stroke-width="5">
+    <ellipse cx="744" cy="488" rx="236" ry="140" transform="rotate(-24 744 488)"/>
+    <ellipse cx="744" cy="488" rx="285" ry="181" transform="rotate(31 744 488)"/>
+  </g>
+  <g fill="#f3dca5" filter="url(#glow)">
+    <circle cx="544" cy="431" r="19"/><circle cx="899" cy="325" r="14"/><circle cx="965" cy="612" r="18"/>
+    <circle cx="617" cy="693" r="12"/><circle cx="838" cy="731" r="9"/>
+  </g>
+  <path d="M1475 865c-72-94-138-181-196-267-34-50-71-74-106-54-35 20-45 62-21 99 64 100 128 199 192 298Z" fill="url(#finger)" opacity="0.92"/>
+  <circle cx="1167" cy="600" r="44" fill="#efc6aa"/>
+  <path d="M1106 576c-56-32-111-42-162-29" fill="none" stroke="#f7d78d" stroke-width="8" stroke-linecap="round" opacity="0.78"/>
+  <circle cx="1095" cy="571" r="12" fill="#fff5bf" filter="url(#glow)"/>
+  <text x="82" y="105" fill="#f3ead7" font-family="Georgia, serif" font-size="64" font-style="italic">Lumen</text>
+  <text x="86" y="148" fill="#9fbab2" font-family="ui-monospace, monospace" font-size="19" letter-spacing="4">A DIGITAL LIFEFORM</text>
+</svg>

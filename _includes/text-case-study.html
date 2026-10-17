@@ -74,6 +74,14 @@
   </div>
   {% endif %}
 
+  {% if p.links and p.links.size > 0 %}
+  <nav class="case-study-links" aria-label="Project links">
+    {% for link in p.links %}
+    <a class="button-link{% if forloop.first %} button-link-primary{% endif %}" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }} <span>↗</span></a>
+    {% endfor %}
+  </nav>
+  {% endif %}
+
   {% if p.paper %}
   <p class="case-study-paper"><strong>Publication:</strong> {{ p.paper }}</p>
   {% endif %}

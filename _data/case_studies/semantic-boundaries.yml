@@ -1,0 +1,43 @@
+format: text
+
+hero:
+  image: /assets/research/semantic-boundaries/originality-encoder-coefficients.png
+  caption: "Originality associations across two sentence-embedding models. Dots show adjusted slopes; bars show author-group 95% confidence intervals."
+
+motivation: >
+  Semantic distance is often used as a computational proxy for creativity, but an unusual story is not
+  automatically an original or valuable one. This project asks when semantic distinctiveness corresponds
+  to human judgments of originality, whether that relationship generalizes to other creativity dimensions,
+  and how strongly conclusions about human and AI writing depend on the chosen semantic reference pool.
+
+system:
+  body: >
+    The study builds an auditable Python pipeline connecting 479 human and AI stories to 958 valid
+    evaluations from two experts. Complete texts are encoded with pinned MiniLM and MPNet Sentence
+    Transformers using tokenizer-aware, lossless chunking and normalized token-weighted pooling.
+    Within-prompt cosine distance is computed against outcome-blind leave-one-out reference stories;
+    clustered regression, paired group bootstrap, and held-out reference perturbations test the stability
+    of the findings across encoders, distance definitions, and human, pooled, and balanced reference pools.
+  image: /assets/research/semantic-boundaries/cross-encoder-agreement.png
+  caption: "Cross-encoder agreement for semantic distinctiveness: a measurement robustness check on the same 479-story corpus."
+
+study_heading: "Analysis & Validation"
+study: >
+  Models adjust for prompt and log word count while uncertainty is clustered across 120 participant or
+  model groups. Deterministic audits verify item-level joins, text coverage, focal-story exclusion,
+  segmentation, score aggregation, and generated figures. The public release contains reproducible
+  aggregate tables and tests while excluding raw stories, per-story ratings, model weights, and other
+  materials whose redistribution rights are not established. Implementation, testing, and documentation
+  were developed with OpenAI Codex assistance.
+
+insight: >
+  Semantic distinctiveness shows a modest positive association with expert-rated originality across both
+  encoders, but adds limited explanatory power. Its separation from surprise, creativity, and value is only
+  partial and encoder-sensitive; human–AI slope comparisons also weaken when the reference pool changes.
+  Semantic distance is therefore useful as one carefully specified measurement—not a universal creativity score.
+
+reflection: >
+  The central outcome is methodological as much as empirical. Computational creativity claims inherit the
+  assumptions of their encoder, aggregation rule, and comparison set. Making those choices visible—and
+  testing how conclusions move when they change—is more informative than presenting a single correlation
+  as if it captured creativity itself.
