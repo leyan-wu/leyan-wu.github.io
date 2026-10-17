@@ -1,0 +1,13 @@
+{% assign p = include.project %}
+<article class="home-project-card project-position-{{ include.position }}{% if p.flagship %} is-featured{% endif %}">
+  <a class="home-project-image" href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}" aria-label="Read {{ p.name }} case study">
+    <img src="{{ p.image | relative_url }}" alt="" loading="{{ include.loading | default: 'lazy' }}">
+    <span class="project-number">0{{ include.position }}</span>
+  </a>
+  <div class="home-project-copy">
+    <p class="project-meta">{{ p.theme }} · {{ p.period }}</p>
+    <h3><a href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}">{{ p.name }}</a></h3>
+    <p>{{ p.brief }}</p>
+    <a class="text-arrow" href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}">Read case study <span>→</span></a>
+  </div>
+</article>

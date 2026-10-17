@@ -1746,36 +1746,20 @@ img {
 
 .home-project-grid {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.home-project-column {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .home-project-card {
-  grid-column: span 5;
   border-top: 1px solid var(--text-primary);
   padding-top: 0.65rem;
-}
-
-.home-project-card.is-featured {
-  grid-column: span 7;
-  grid-row: span 2;
-}
-
-.home-project-card.is-concluding {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  gap: clamp(2rem, 4vw, 4rem);
-  align-items: center;
-}
-
-.home-project-card.is-concluding .home-project-image {
-  min-height: 300px;
-}
-
-.home-project-card.is-concluding .home-project-copy {
-  max-width: 38rem;
-  padding: 0;
 }
 
 .home-project-image {
@@ -2686,20 +2670,34 @@ article.publications-page {
     grid-template-columns: 1fr 1fr;
   }
 
+  .home-project-column {
+    display: contents;
+  }
+
   .home-project-card,
   .home-project-card.is-featured {
     grid-column: span 1;
     grid-row: auto;
   }
 
-  .home-project-card.is-featured {
+  .home-project-card.project-position-1 {
     grid-column: 1 / -1;
+    grid-row: 1;
   }
 
-  .home-project-card.is-concluding {
+  .home-project-card.project-position-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .home-project-card.project-position-3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .home-project-card.project-position-4 {
     grid-column: 1 / -1;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 2rem;
+    grid-row: 3;
   }
 
   .is-featured .home-project-image {
@@ -2868,15 +2866,17 @@ article.publications-page {
     grid-column: 1;
   }
 
-  .home-project-card.is-concluding {
-    display: block;
+  .home-project-card.project-position-1,
+  .home-project-card.project-position-2,
+  .home-project-card.project-position-3,
+  .home-project-card.project-position-4 {
     grid-column: 1;
   }
 
-  .home-project-card.is-concluding .home-project-copy {
-    max-width: none;
-    padding-top: 1.25rem;
-  }
+  .project-position-1 { grid-row: 1; }
+  .project-position-2 { grid-row: 2; }
+  .project-position-3 { grid-row: 3; }
+  .project-position-4 { grid-row: 4; }
 
   .home-project-image,
   .is-featured .home-project-image {

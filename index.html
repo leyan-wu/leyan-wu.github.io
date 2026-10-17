@@ -46,20 +46,23 @@ body_class: home-page
     </header>
 
     <div class="home-project-grid">
+      <div class="home-project-column home-project-column-left">
       {% for p in projects %}
-      <article class="home-project-card{% if p.flagship %} is-featured{% endif %}{% if forloop.last %} is-concluding{% endif %}">
-        <a class="home-project-image" href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}" aria-label="Read {{ p.name }} case study">
-          <img src="{{ p.image | relative_url }}" alt="" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
-          <span class="project-number">0{{ forloop.index }}</span>
-        </a>
-        <div class="home-project-copy">
-          <p class="project-meta">{{ p.theme }} · {{ p.period }}</p>
-          <h3><a href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}">{{ p.name }}</a></h3>
-          <p>{{ p.brief }}</p>
-          <a class="text-arrow" href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}">Read case study <span>→</span></a>
-        </div>
-      </article>
+        {% if forloop.index == 1 %}
+          {% include home-project-card.html project=p position=forloop.index loading='eager' %}
+        {% elsif forloop.index == 4 %}
+          {% include home-project-card.html project=p position=forloop.index %}
+        {% endif %}
       {% endfor %}
+      </div>
+
+      <div class="home-project-column home-project-column-right">
+      {% for p in projects %}
+        {% if forloop.index == 2 or forloop.index == 3 %}
+          {% include home-project-card.html project=p position=forloop.index %}
+        {% endif %}
+      {% endfor %}
+      </div>
     </div>
   </section>
 
