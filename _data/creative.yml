@@ -6,6 +6,7 @@ framing: >
 interactive:
   - slug: lumen
     name: "Lumen: A Digital Lifeform"
+    rotation: -1.1
     theme: "Interactive Practice"
     role: Independent Interactive Work
     period: Sep – Oct 2026

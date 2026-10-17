@@ -15,18 +15,18 @@ body_class: practice-page
 
 {% assign interactive_works = site.data.creative.interactive %}
 {% if interactive_works and interactive_works.size > 0 %}
-  <div class="interactive-practice-list">
+  <div class="creative-list creative-list-paper creative-list-interactive">
     {% for work in interactive_works %}
-    <article class="interactive-practice-card">
-      <a class="interactive-practice-image" href="{{ work.url | relative_url }}" aria-label="View {{ work.name }}">
-        <img src="{{ work.image | relative_url }}" alt="Lumen, a luminous artificial lifeform" loading="eager">
-      </a>
-      <div class="interactive-practice-copy">
+    <article class="creative-item interactive-entry"{% if work.rotation %} data-paper-tilt style="--paper-tilt: {{ work.rotation }}deg"{% endif %}>
+      <a class="interactive-card-link" href="{{ work.url | relative_url }}">
         <p class="project-meta">{{ work.period }} · {{ work.role }}</p>
-        <h3><a href="{{ work.url | relative_url }}">{{ work.name }}</a></h3>
-        <p>{{ work.brief }}</p>
-        <a class="text-arrow" href="{{ work.url | relative_url }}">Enter the work <span>→</span></a>
-      </div>
+        <h3>{{ work.name }}</h3>
+        <figure class="interactive-collage-image">
+          <img src="{{ work.image | relative_url }}" alt="Lumen, a luminous artificial lifeform" loading="eager">
+        </figure>
+        <p class="interactive-card-brief">{{ work.brief }}</p>
+        <p class="creative-link-wrap interactive-card-cta"><span>Enter the work →</span></p>
+      </a>
     </article>
     {% endfor %}
   </div>
