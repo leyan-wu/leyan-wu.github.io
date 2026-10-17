@@ -47,7 +47,7 @@ body_class: home-page
 
     <div class="home-project-grid">
       {% for p in projects %}
-      <article class="home-project-card{% if p.flagship %} is-featured{% endif %}">
+      <article class="home-project-card{% if p.flagship %} is-featured{% endif %}{% if forloop.last %} is-concluding{% endif %}">
         <a class="home-project-image" href="{{ '/research/' | append: p.slug | append: '/' | relative_url }}" aria-label="Read {{ p.name }} case study">
           <img src="{{ p.image | relative_url }}" alt="" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
           <span class="project-number">0{{ forloop.index }}</span>

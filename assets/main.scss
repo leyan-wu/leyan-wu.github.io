@@ -1761,6 +1761,23 @@ img {
   grid-row: span 2;
 }
 
+.home-project-card.is-concluding {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.home-project-card.is-concluding .home-project-image {
+  min-height: 300px;
+}
+
+.home-project-card.is-concluding .home-project-copy {
+  max-width: 38rem;
+  padding: 0;
+}
+
 .home-project-image {
   position: relative;
   display: block;
@@ -2679,6 +2696,12 @@ article.publications-page {
     grid-column: 1 / -1;
   }
 
+  .home-project-card.is-concluding {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
+  }
+
   .is-featured .home-project-image {
     min-height: 360px;
   }
@@ -2843,6 +2866,16 @@ article.publications-page {
   .home-project-card,
   .home-project-card.is-featured {
     grid-column: 1;
+  }
+
+  .home-project-card.is-concluding {
+    display: block;
+    grid-column: 1;
+  }
+
+  .home-project-card.is-concluding .home-project-copy {
+    max-width: none;
+    padding-top: 1.25rem;
   }
 
   .home-project-image,
