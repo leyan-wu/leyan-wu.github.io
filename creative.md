@@ -9,7 +9,31 @@ body_class: practice-page
 <p class="practice-framing">{{ site.data.creative.framing }}</p>
 
 <header class="practice-section-heading">
-  <p class="editorial-index">01 / MOVING IMAGE</p>
+  <p class="editorial-index">01 / EMBODIED INTERACTION</p>
+  <h2>Interactive Work</h2>
+</header>
+
+{% assign interactive_works = site.data.creative.interactive %}
+{% if interactive_works and interactive_works.size > 0 %}
+  <div class="interactive-practice-list">
+    {% for work in interactive_works %}
+    <article class="interactive-practice-card">
+      <a class="interactive-practice-image" href="{{ work.url | relative_url }}" aria-label="View {{ work.name }}">
+        <img src="{{ work.image | relative_url }}" alt="Lumen, a luminous artificial lifeform" loading="eager">
+      </a>
+      <div class="interactive-practice-copy">
+        <p class="project-meta">{{ work.period }} · {{ work.role }}</p>
+        <h3><a href="{{ work.url | relative_url }}">{{ work.name }}</a></h3>
+        <p>{{ work.brief }}</p>
+        <a class="text-arrow" href="{{ work.url | relative_url }}">Enter the work <span>→</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<header class="practice-section-heading">
+  <p class="editorial-index">02 / MOVING IMAGE</p>
   <h2>Film</h2>
 </header>
 
@@ -53,7 +77,7 @@ body_class: practice-page
 {% endif %}
 
 <header class="practice-section-heading">
-  <p class="editorial-index">02 / TEXT &amp; IMAGE</p>
+  <p class="editorial-index">03 / TEXT &amp; IMAGE</p>
   <h2>Poetry</h2>
 </header>
 
@@ -92,7 +116,7 @@ body_class: practice-page
 {% endif %}
 
 <header class="practice-section-heading">
-  <p class="editorial-index">03 / FRAGMENTS</p>
+  <p class="editorial-index">04 / FRAGMENTS</p>
   <h2>Zines</h2>
 </header>
 

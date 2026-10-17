@@ -18,10 +18,6 @@
       <stop offset="0.35" stop-color="#ffd889"/>
       <stop offset="1" stop-color="#dc8064" stop-opacity="0.15"/>
     </radialGradient>
-    <linearGradient id="finger" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#f1d0b4"/>
-      <stop offset="1" stop-color="#b9796d"/>
-    </linearGradient>
     <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="28"/>
     </filter>
@@ -48,10 +44,12 @@
     <circle cx="544" cy="431" r="19"/><circle cx="899" cy="325" r="14"/><circle cx="965" cy="612" r="18"/>
     <circle cx="617" cy="693" r="12"/><circle cx="838" cy="731" r="9"/>
   </g>
-  <path d="M1475 865c-72-94-138-181-196-267-34-50-71-74-106-54-35 20-45 62-21 99 64 100 128 199 192 298Z" fill="url(#finger)" opacity="0.92"/>
-  <circle cx="1167" cy="600" r="44" fill="#efc6aa"/>
-  <path d="M1106 576c-56-32-111-42-162-29" fill="none" stroke="#f7d78d" stroke-width="8" stroke-linecap="round" opacity="0.78"/>
-  <circle cx="1095" cy="571" r="12" fill="#fff5bf" filter="url(#glow)"/>
-  <text x="82" y="105" fill="#f3ead7" font-family="Georgia, serif" font-size="64" font-style="italic">Lumen</text>
-  <text x="86" y="148" fill="#9fbab2" font-family="ui-monospace, monospace" font-size="19" letter-spacing="4">A DIGITAL LIFEFORM</text>
+  <g fill="none" stroke="#8ed8cc" stroke-linecap="round">
+    <path d="M1110 390c93-38 169-28 228 28" stroke-width="3" opacity="0.34"/>
+    <path d="M1119 440c126-7 218 48 269 164" stroke-width="2" opacity="0.2"/>
+    <path d="M1082 714c87 44 183 43 287-5" stroke-width="3" opacity="0.25"/>
+  </g>
+  <g fill="#f5d892" filter="url(#glow)">
+    <circle cx="1160" cy="376" r="8"/><circle cx="1260" cy="414" r="5"/><circle cx="1208" cy="720" r="7"/>
+  </g>
 </svg>

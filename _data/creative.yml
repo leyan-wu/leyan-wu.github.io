@@ -1,7 +1,32 @@
 framing: >
-  My creative practice is one way I develop and investigate research questions. Working with film,
-  poetry, photography, and zine-making keeps me close to fragmentation, memory, and materiality—the
-  same concerns that shape my HCI work on collage, co-creativity, and emotional reflection.
+  My creative practice is one way I develop and investigate research questions. Working with interactive
+  artificial life, film, poetry, photography, and zine-making keeps me close to embodiment, fragmentation,
+  memory, and materiality—the same concerns that shape my HCI work on co-creativity and emotional reflection.
+
+interactive:
+  - slug: lumen
+    name: "Lumen: A Digital Lifeform"
+    theme: "Interactive Practice"
+    role: Independent Interactive Work
+    period: Sep – Oct 2026
+    brief: >
+      A hand-tracked, voice-enabled artificial organism that explores how an embodied AI presence can
+      invite curiosity, care, and moments of comfort in an increasingly digital world.
+    insight: >
+      Embodiment gives an AI encounter a new grammar: distance creates anticipation, touch requires pacing,
+      and a persistent body makes the history of a relationship perceptible without claiming consciousness.
+    highlights:
+      - Local hand tracking with proximity, gentle touch, and startle responses
+      - Streaming voice conversation with persistent browser-local memory
+      - Seeded growth, autonomous activities, sleep cycles, and a dream journal
+    tags: [Embodied AI, Artificial Life, Hand Tracking, Voice Interaction, Affective Computing]
+    image: /assets/research/lumen/lumen-organism.svg
+    url: /practice/lumen/
+    links:
+      - label: Experience Lumen
+        url: https://lumen-lifeform.leyanwu56.chatgpt.site
+      - label: View source on GitHub
+        url: https://github.com/leyan-wu/lumen
 
 films:
   - slug: another-ending-of-june

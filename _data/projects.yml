@@ -86,38 +86,6 @@
   paper: Second-author paper, ACM DIS 2026 Workshop on AI for Therapy
   image: /assets/research/coller/system-overview.png
 
-- slug: lumen
-  name: "Lumen: A Digital Lifeform"
-  theme: "AI & Well-being"
-  flagship: false
-  role: Independent Project
-  period: Sep – Oct 2026
-  brief: >
-    A hand-tracked, voice-enabled artificial organism that explores how an embodied AI presence can
-    invite curiosity, care, and moments of comfort in an increasingly digital world.
-  motivation: >
-    What changes when AI is given a body with distance, touch, rhythm, memory, and visible development?
-  contribution: >
-    Designed and built the procedural organism, local MediaPipe interaction model, streaming voice
-    experience, privacy boundaries, daily rhythms, and persistent browser-local development system.
-  insight: >
-    Embodiment gives an AI encounter a new grammar: distance creates anticipation, touch requires pacing,
-    and a persistent body makes the history of a relationship perceptible without claiming consciousness.
-  reflection: >
-    The prototype balances emotional expression with clear epistemic boundaries: comfort is an intention,
-    and responsive simulated behavior is not evidence of subjective experience.
-  highlights:
-    - Local hand tracking with proximity, gentle touch, and startle responses
-    - Streaming voice conversation with persistent browser-local memory
-    - Seeded growth, autonomous activities, sleep cycles, and a dream journal
-  tags: [Embodied AI, Artificial Life, Hand Tracking, Voice Interaction, Affective Computing]
-  image: /assets/research/lumen/lumen-organism.svg
-  links:
-    - label: Experience Lumen
-      url: https://lumen-lifeform.leyanwu56.chatgpt.site
-    - label: View source on GitHub
-      url: https://github.com/leyan-wu/lumen
-
 - slug: semantic-boundaries
   name: "The Semantic Boundaries of Creativity"
   theme: "Computational Creativity"

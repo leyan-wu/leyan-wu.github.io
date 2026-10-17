@@ -1,5 +1,7 @@
 {% assign p = include.project %}
 {% assign cs = include.case_study %}
+{% assign back_path = include.back_path | default: '/projects/' %}
+{% assign back_label = include.back_label | default: 'Back to all research' %}
 
 <article class="case-study case-study-text">
   <header class="case-study-header">
@@ -87,6 +89,6 @@
   {% endif %}
 
   <p class="case-study-back">
-    <a href="{{ '/projects/' | relative_url }}">← Back to all research</a>
+    <a href="{{ back_path | relative_url }}">← {{ back_label }}</a>
   </p>
 </article>

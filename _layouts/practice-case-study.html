@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign p = site.data.creative.interactive | where: "slug", page.slug | first %}
+{% assign cs = site.data.case_studies[page.slug] %}
+
+{% if p and cs %}
+  {% include text-case-study.html project=p case_study=cs back_path='/creative/' back_label='Back to practice' %}
+{% else %}
+  <p>Practice work not found.</p>
+{% endif %}
